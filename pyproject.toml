@@ -14,12 +14,17 @@ dependencies = [
     "numpy (>=2.3.2,<3.0.0)",
     "seaborn (>=0.13.2,<0.14.0)",
     "matplotlib (>=3.10.5,<4.0.0)",
-    "openpyxl (>=3.1.5,<4.0.0)"
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "nbdime (>=4.0.2,<5.0.0)"
 ]
 
 [tool.poetry]
 packages = [{include = "pcs", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+nbconvert = "^7.16.6"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
